@@ -20,5 +20,14 @@ if [ -f '/Users/vukasinmicic/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/vu
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/vukasinmicic/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/vukasinmicic/google-cloud-sdk/completion.zsh.inc'; fi
 
+# External plugins (initialized before)
+source ~/.zsh/plugins_before.zsh
+
 # Settings
 source ~/.zsh/settings.zsh
+
+# Aliases
+source ~/.zsh/aliases.zsh
+
+# External plugins (initialized after)
+source ~/.zsh/plugins_after.zsh
