@@ -19,3 +19,6 @@ if [ -f '/Users/vukasinmicic/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/vu
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/vukasinmicic/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/vukasinmicic/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Settings
+source ~/.zsh/settings.zsh

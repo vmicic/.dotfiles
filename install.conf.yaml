@@ -1,12 +1,14 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ["~"]
 
 - link:
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
+    ~/.vimrc:
+    ~/.zsh:
+    ~/.zshrc:
 
 - create:
     - ~/.vim/undo-history
