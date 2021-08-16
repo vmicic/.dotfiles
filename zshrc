@@ -14,7 +14,6 @@ source ~/.zsh/aliases.zsh
 # External plugins (initialized after)
 source ~/.zsh/plugins_after.zsh
 
-# Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
-
-export PATH=/opt/homebrew/bin:/Users/vukasinmicic/.serverless/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
