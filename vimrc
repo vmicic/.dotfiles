@@ -63,6 +63,14 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" tab charatcters in file to apper 4 character cells wide
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+
+" autoindent on a new line
+set autoindent
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -73,8 +81,8 @@ nnoremap <Left>  :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up>    :echoe "Use k"<CR>
 nnoremap <Down>  :echoe "Use j"<CR>
-" ...and in insert mode
-inoremap <Left>  <ESC>:echoe "Use h"<CR>
-inoremap <Right> <ESC>:echoe "Use l"<CR>
-inoremap <Up>    <ESC>:echoe "Use k"<CR>
-inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+" Shortcuts
+
+:iabbrev <buffer> con@ console.log();<left><left>
+:iabbrev <buffer> forii@ for(let i = 0; i <z; i++) {<CR><CR>}<Esc>?z<CR>xi
